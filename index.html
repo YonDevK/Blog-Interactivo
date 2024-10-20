@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Blog Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#new-post">Nuevo Artículo</a></li>
+                <li><a href="#posts">Artículos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="new-post">
+        <h2>Nuevo Artículo</h2>
+        <form id="post-form">
+            <input type="text" id="title" placeholder="Título" required>
+            <textarea id="content" placeholder="Contenido" required></textarea>
+            <button type="submit">Publicar</button>
+        </form>
+    </section>
+
+    <section id="posts">
+        <h2>Artículos</h2>
+        <div id="post-list"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
